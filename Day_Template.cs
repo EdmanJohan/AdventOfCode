@@ -4,7 +4,7 @@ namespace AdventOfCode {
     public class Day_0X : BaseDay {
         private readonly String _input;
 
-        public Day_03() {
+        public Day_0X() {
             if (!File.Exists(InputFilePath)) {
                 throw new SolvingException($"Path {InputFilePath} not found for {GetType().Name}");
             }
