@@ -10,8 +10,8 @@ namespace AdventOfCode {
             }
 
             _inputNumbers = File.ReadAllLines(InputFilePath).Where(x => int.TryParse(x, out var tempInt)).Select(t => int.Parse(t.Trim())).ToList();
-
         }
+        
         public override ValueTask<string> Solve_1() {
             int? solution = 0;
 
@@ -27,6 +27,7 @@ namespace AdventOfCode {
 
             return new($"{solution.GetValueOrDefault()}");
         }
+
         public override ValueTask<string> Solve_2() {
             int? solution = 0;
 
