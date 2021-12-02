@@ -9,7 +9,7 @@ namespace AdventOfCode {
                 throw new SolvingException($"Path {InputFilePath} not found for {GetType().Name}");
             }
 
-            _inputNumbers = File.ReadAllLines(InputFilePath).Where(x => int.TryParse(x, out var tempInt)).Select(t => int.Parse(t.Trim())).ToList();
+            _inputNumbers = File.ReadAllLines(InputFilePath).Select(int.Parse).ToList();
         }
         
         public override ValueTask<string> Solve_1() {
