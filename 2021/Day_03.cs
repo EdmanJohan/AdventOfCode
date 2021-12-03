@@ -39,7 +39,6 @@ namespace AdventOfCode {
             var O2Rating = GetSystemRating(SystemType.OxygenGenerator, _inputLines);
             var CO2Rating = GetSystemRating(SystemType.CO2Scrubber, _inputLines);
 
-            Console.WriteLine($"O2 Rating: {O2Rating} CO2 Rating: {CO2Rating}");
             solution = O2Rating * CO2Rating;
             return new($"{solution.GetValueOrDefault()}");
         }
